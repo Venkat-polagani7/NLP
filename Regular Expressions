@@ -1,0 +1,20 @@
+[abc]          a or b or c
+[^abc] 	       any character _except_ a, b, or c (negation)
+[a-zA-Z]       a through z or A through Z, inclusive (range)
+[a-d[m-p]]     [a-dm-p] 
+[a-e&&[def]]   [de] 
+[a-r&&[^bq-z]] [ac-p] 
+\d+(\.\d\d)?   contains a positive integer or a floating point number with exactly two characters after the decimal point.
+[2-9]|[12]\d|3[0-6]	contains an integer in the range 2..36 inclusive
+\d{5}(-\d{4})?	contains a United States zip code
+1\d{10}	contains an 11-digit string starting with a 1
+[b-chm-pP]at|ot	contains {bat, cat, hat, mat, nat, oat, pat, Pat, ot}
+\w+@[a-z]+\.[a-z]{2,3} - Matches an email address
+\b\w{4,}\b - Matches a word with 4 or more letters
+^[A-Z][a-z]* - Matches a capitalized word (e.g. John, Paris)
+[0-9]{4}-[0-9]{2}-[0-9]{2} - Matches a date in the format YYYY-MM-DD
+^[a-zA-Z0-9]+$ - Matches a string consisting of only alphanumeric characters
+[A-Z]{2}\-[0-9]{4} - Matches a license plate number in the format AA-1234
+\b(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]\b - Matches a time in the format HH:MM
+\b\w{4,}\b - Matches a word with 4 or more letters
+\w+@[a-z]+\.[a-z]{2,3} - Matches an email address
